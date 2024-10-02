@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ARRAY IN JAVASCRIPT</title>
+	</head>
+	<body>
+		<!-- LECTURE NO 11 -->
+		<script>
+		// Function 1
+		function add(a,b){
+			return(a+b);
+		}
+		console.log(add(34,35));
+		document.write("<br>");
+		// Function 2
+		function sum(a,b){
+			c=a+b;
+			console.log(c);
+		}
+		sum(3,35);
+		document.write("<br>");
+	</script>
+		<!-- LECTURE 12,13 THAPA TECHNICAL -->
+		<!-- Operations Relted to ARRAYS -->
+		<script>
+			var a = ["RAM", "ARJUN", "SHAM"];      // same type of initialization having the same datatype
+			document.write(typeof a + "<br>");
+			var b = new Array("RAM", "ARJUN", "SHAM");       // same type of initialization having the same datatype
+			document.write(typeof(b) + "<br>");
+			document.write(a[0] + "<br>");
+			document.write(a[1] + "<br>");
+			document.write(a + "<br>");
+
+			document.write("<br>");
+			var array = [ "SHAW","SAM", "MANIK",];
+
+			var length = array.length; // Length Starts from 1,2,3,4
+			// alert(length);
+			document.write(length);
+			document.write(array);
+			document.write("<br>");
+
+			var array = ["DAM", "ABANIK", "shaw"];
+			array.unshift("kadam");
+			// array.shift("shaw");
+			document.write(array);
+			document.write("<br>");
+			document.write(array.indexOf("shaw"));
+
+			
+		</script>
+	</body>
+</html>

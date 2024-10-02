@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+ <!-- LECTURE 20 THAPA TECHNICAL -->
+<body>
+    <p id="thapa">Technical</p>
+    <p class="Welcome">TECHNICAL</p>
+    <p class="Welcome">TECHNICA 1</p>
+    <p class="Welcome">TECHNICAL 2</p>
+    <p class="Welcome">TECHNICAL 3</p>
+
+    <ul><li>like</li>
+        <li>Share</li>
+        <li>Subscribe</li></ul>
+    <script>
+        // Acess children of a body
+        var child = document.body.children;
+        console.log(child);
+        
+
+        // add a new child in a paragraph
+        var para = document.createElement("p");
+        var textnode = document.createTextNode("This is a new para.");
+        para.appendChild(textnode);
+        console.log(para);
+
+        document.body.appendChild(para);
+
+        // Acessing first and last child
+        var list = document.querySelector("ul");
+        console.log(list);
+
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+        // Finding the Sibling    
+        var firstsiblings = thapa.nextElementSibling;
+        console.log(firstsiblings);
+
+        var firstsiblings = thapa.nextElementSibling.nextElementSibling;
+        console.log(firstsiblings);
+
+        console.log(list.parentNode);
+    </script>
+    
+</body>
+</html>

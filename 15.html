@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+</head>
+<!-- LECTURE 26  THAPA TECHNICAL 
+    HOURS = 0-23
+    MINUTES = 0-59
+-->
+<body>
+    <script>
+        var d = new Date();
+        // var n = d.getTime();
+        
+        var hour = d.getHours();
+        var min = d.getMinutes();
+        var seconds = d.getSeconds();
+       
+        document.write( hour+" : "+min+" : "+seconds);
+        document.write("<br>");
+        document.write(hour);
+        document.write("<br>");
+        document.write(min);
+        document.write("<br>");
+        document.write(seconds);
+
+    </script>
+    
+</body>
+</html>

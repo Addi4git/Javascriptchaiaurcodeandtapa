@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMIC TIME</title>
+</head>
+<!-- LECTURE 27  THAPA TECHNICAL -->
+<!-- To Set a Dynamic Time(SETINTERVAL) and to stop it we have (STOPINTERVAL)-->
+ 
+<body>
+    <button onclick="clearInterval(clock)"> Click ME </button><br><br>
+    <p id="showClock"></p>
+    <script>
+        var clock = setInterval(clocktiming,1000)
+        function clocktiming(){
+        var d = new Date();
+        var thapa = d.toLocaleTimeString();
+        document.getElementById('showClock').innerHTML=thapa;
+        
+        }
+    </script>
+    
+</body>
+</html>

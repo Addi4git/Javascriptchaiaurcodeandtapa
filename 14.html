@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DATE OBJECTS</title>
+</head>
+<!-- LECTURE 25  THAPA TECHNICAL -->
+<body>
+    <script>
+        var d = new Date( 2000,11,4);    // JAN - 0 , DEC- 11
+        document.write(d);
+        document.write("<br>");
+        var d = new Date( 2000,0);    // having month and year will give as 1 JAN 2000
+        document.write(d);
+        document.write("<br>");
+        // GET DATE
+        var dateobj = new Date();
+        var month = dateobj.getUTCMonth()+1;
+        var day = dateobj.getUTCDate();
+        var year = dateobj.getUTCFullYear();
+        document.write( year + "/" + month + "/" + day);
+        // SET DATE
+        document.write("<br>")
+        var e = new Date();
+        e.setFullYear(2024,11,4);
+        document.write(e);
+    </script>
+    
+</body>
+</html>

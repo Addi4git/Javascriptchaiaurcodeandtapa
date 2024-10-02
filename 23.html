@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVERSING A STRING IN JAVASCRIPT IN REAL TIME</title>
+</head>
+<!-- LECTURE 36 THAPA TECHNICAL -->
+<body>
+    <style>
+        #reverseTheName {
+            width: 10%;
+            box-sizing: content-box; 
+            text-align: center;
+
+        }
+        #showData {
+            width: 10%;
+            text-align: center;
+
+        }
+    </style>
+    <h1 style = "text-align: center;">REVERSE THE STRING IN REAL TIME WITH DECREMENTING FOR LOOP</h1>
+    <input type="text" name="" id="reverseTheName" onkeyup="reverseString()">
+    <br>
+    <br>
+    <input type="text" name="" id="showData">
+
+    <script>
+        function reverseString(){
+            var str = document.getElementById('reverseTheName').value;
+            //alert(str);
+            var newstring = "";
+
+            for(var i=str.length-1;i>=0;i--){
+                newstring += str[i];
+            }
+            document.getElementById('showData').value = newstring;
+        }
+    </script>
+</body>>
+</html>

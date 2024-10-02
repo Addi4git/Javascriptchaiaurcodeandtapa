@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+ <!-- LECTURE 19 THAPA TECHNICAL -->
+<body> 
+    <p id ="thapa">THAPA</p>                         <!--id should have unique value -->
+    <p class = "welcome" >TECHNICAL</p>              <!--class can have repeatation -->
+    <p class = "welcome" >TECHNICAL 1</p>
+    <p class = "welcome" >TECHNICAL 2</p>
+    <script>
+        var a = document.getElementById("thapa").innerHTML;                    //Calling id 
+        document.write(a);
+        document.write("<br>");
+        var b = document.getElementsByClassName("welcome")[0].innerHTML;          //Calling class
+        document.write(b);
+        document.write("<br>");
+        var b = document.getElementsByClassName("welcome")[1].innerHTML;          //Calling class by indices
+        document.write(b);
+        document.write("<br>");
+        // Acess an element by Tag name
+        var tag = document.getElementsByTagName("p");
+        document.write(tag);
+        console.log(tag);
+        document.write("<br>");
+        // Acess an element by QUERY SELECTOR
+        var p = document.querySelector('p').innerHTML;
+        document.write(p);
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JAVASCRIPT</title>
+	</head>
+	<!-- LECTURE 41 THAPA TECHNICAL -->
+	<!--   -> write a short paragraph that prints number 1 to 100  
+       -> for the multiple of 3 it print as " FIZZ ".
+       -> for the multiple of 5 it print as " BUZZ ".
+       -> for the multiple of 3 and 5, it print as " FIZZ BUZZ ".
+-->
+	<body>
+		<script>
+			var fizzbuzz = []; // Creation of an ARRAY
+			var a = 1; // we can also use [let or const] for VAR
+			// console.log(a+"\t"); -> foe new line
+			function fizzbuz() {
+				while (a <= 100) {
+					if (a % 3 == 0 && a % 5 == 0) {
+						fizzbuzz.push("FIZZ BUZZ");
+					} else if (a % 3 == 0) {
+						fizzbuzz.push("FIZZ");
+					} else if (a % 5 == 0) {
+						fizzbuzz.push("BUZZ");
+					} else {
+						fizzbuzz.push(a);
+					}
+					a++;
+				}
+				console.log(fizzbuzz);
+			}
+			fizzbuz();
+			console.log();
+			
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Synchronous and Asynchronous</title>
+    <!-- Lecture 64 -->
+</head>
+<body>
+    <script>
+        // Synchronous - It blocks the client request  until the completion of previous tasks.
+        const fun2 = () => {
+            console.log('fun2 is starting');
+        }
+
+        const fun1 = () => {
+            console.log('fun1 is starting');
+            fun2();
+            console.log('fun1 is ending');
+        }
+        fun1();
+        
+        // ASynchronous - It does notblocks the client unit opeartion till that time it works on another tasks.
+        const fun4 = () => {
+            
+            setTimeout(() => {
+                console.log('fun4 is starting');
+            },3000);
+        }
+
+        const fun3 = () => {
+            console.log('fun3 is starting');
+            fun4();
+            console.log('fun3 is ending');
+        }
+        fun3();
+
+    </script>
+    
+</body>
+</html>

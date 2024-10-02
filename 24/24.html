@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE CALCULATOR USING JAVASCRIPT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0, 0.3));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        header{
+            width:100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* transform: translate(-50%,-50%) */
+        }
+        
+    </style>
+</head>    
+<!-- LECTURE 37 THAPA TECHNICAL -->
+<body>
+    <header>
+    <div class="card w-30 m-auto text-center" >
+        <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
+        <div class="card-body">
+            <form class="form-inline w-75 m-auto">
+                <div class="form-group">
+                    <input type = "text" name="" class="form-control text-center" placeholder="YOUR NAME" id = "name">
+                </div>
+                <div> <span class="pl-4 pr-4"> + </span></div>
+                <div class="form-group">
+                    <input type = "text" name=""  class="form-control text-center" placeholder="LOVE NAME" id = "lname">
+                </div>
+            </form>
+            <br>
+            <div class="w-75 m-auto">
+                <button clas="btn btn-success w-50 " onclick="checklovepercentage()">CLICK ME</button>
+            </div>
+            <br>
+            <div>
+                <input type = "text" name ="" id="lovevalue" class="form-control text-canter w-25 m-auto text-center" placeholder="LOVE PERCENTAGE">
+            </div>
+
+        </div>
+        <div class="card-footer">GOD BLESS YOUR RELATIONSHIP</div>
+        <img src="https://images.unsplash.com/photo-1516980907201-943c13a8d03c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3f
+        DB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1520" height="550">
+    
+      </div>
+    </header>
+    <script>
+
+        // var name = document.getElementById('name').value;
+        // var name = document.getElementById('lname').value;
+
+        // if(name == ""){
+        //     alert('Plz enter your name');
+        // }else if(name.length <=2){
+        //     alert('Min length is 3');
+        // }else if(!isNaN(name)){
+        //     alert('Numbers are not allowed');
+        // }
+
+        // else if(lname == ""){
+        //     alert('Plz enter your Love name');
+        // }else if(lname.length <=2){
+        //     alert('Min length is 3');
+        // }else if(!isNaN(lname)){
+        //     alert('Numbers are not allowed');
+        // }
+        // else{
+        function checklovepercentage(){
+            var lovedata = Math.random() * 100;
+            lovedata = Math.floor(lovedata);
+            document.getElementById('lovevalue').value = lovedata + " %";
+        }
+    
+    </script>
+</body>
+</html>

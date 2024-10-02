@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>Lecture 66</title>
+	</head>
+	<body>
+		<!-- CALL BACK HELL -->
+		<!-- Callback hell in JavaScript refers to a situation where multiple nested
+		callbacks make the code difficult to read and maintain. It typically occurs
+		when you have several asynchronous operations that depend on each other,
+		leading to deeply nested code. This can be visually represented as a pyramid
+		or an arrow shape due to the multiple levels of indentation. -->
+        <!-- USING NESTED TIMEOUT -->
+        <script>
+            const getRollNo = () => {
+                setTimeout(() => {
+                    console.log("API is calling.")
+                    let rollNo = [1,2,3,4,5];
+                    console.log(rollNo);
+
+                    setTimeout((rollNo) =>{
+                        const biodata = {
+                            name : "Additye",
+                            age : 24
+                        }
+                        console.log(`My name is ${biodata.name} and I am ${biodata.age} years old.`);
+
+                        setTimeout((name) =>{
+                            biodata.gender = 'male';
+                            console.log(`My name is ${biodata.name} and I am ${biodata.age} years old also I am a Sigma ${biodata.gender}.`);
+
+                        },3000,biodata.name);
+
+                    },3000,rollNo[1]);
+
+                },3000);
+
+            }
+            getRollNo();
+        </script>
+	</body>
+</html>

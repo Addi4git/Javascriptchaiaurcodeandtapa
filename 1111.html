@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DASSULT SYSTEMS -->
+    <style>
+        .container{
+            display : flex;
+            background-color: green;
+        }
+        .box{
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: green;
+        }
+        .box2{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function fun1(){
+            
+            alert('hello');
+            var a = document.getElementsByClassName("box box2")[0].style.width='1%';
+            debugger;
+        }
+
+    </script>
+    
+    <div class="container">
+        
+        <div class="box box2">
+            
+        </div>
+    </div>
+
+    <button onclick="fun1()">Click me</button>
+    
+</body>
+</html>

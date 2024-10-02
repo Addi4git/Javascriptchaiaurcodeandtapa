@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>FAT Arrow Functions</title>
+</head>
+<body>
+    <script>
+
+        // Template string
+
+        function add(){
+            let a = 10;
+            let b = 34;
+            console.log(`The addition of ${a} and ${b} is ${a + b}`);
+        }
+        add();
+       
+        // Fat Arrow Function Execution
+
+        const funadd = () => { let a = 5;
+            let b = 10;
+            console.log(`The Addition of ${a} and ${b} is ${a+b}`);
+        }
+
+        funadd();
+        
+        // Fat Arrow Function Execution with Arguments and Parameters
+
+        const opr = (a,b) =>  console.log(`The Addition of ${a} and ${b} is ${a+b}`);
+        opr(464,8);
+
+        // Default Arguments
+        const Add = (a=5, b=10) =>  console.log(`The Addition of ${a} and ${b} is ${a+b}`);
+        Add();
+      
+
+        // Regular Functions
+        function sum(a,b){
+            c = a+b;
+            console.log(c);
+        }
+        sum(45,9);
+    </script>
+    
+</body>
+</html>

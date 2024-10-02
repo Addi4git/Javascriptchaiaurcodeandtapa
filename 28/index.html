@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&family=Roboto:wght@300&displ
+    ay=swap" rel="stylesheet">
+</head>
+<!-- LECTURE 44 THAPA TECHNICAL -->
+<body>
+    <div class="container">
+        <h1> JS Ludo</h1>
+        
+        <div class="dice">
+            <p> Player 1</p>
+            <img src="images/dice1.jpg" width="400" height="400" id="check1">
+        </div> 
+        
+        <div class="dice">
+            <p> Player 2</p>
+            <img src="images/dice6.jpg" width="400" height="400" id="check2">
+        </div> 
+        <div>
+            <button onclick="ludogame()">Click Me</button>
+        </div>
+    </div>
+
+<script>
+          
+ludogame = () => {
+        const play1 = Math.floor(Math.random() * 6) + 1;
+        const play1dice = `images/dice${play1}.jpg`;
+        document.getElementById('check1').setAttribute('src',play1dice);
+
+        const play2 = Math.floor(Math.random() * 6) + 1;
+        const play2dice = `images/dice${play2}.jpg`;
+        document.getElementById('check2').setAttribute('src',play2dice);
+
+        if(play1 > play2){
+            document.querySelector('h1').innerHTML="Player 1 WON :)";
+        }
+        else if(play1 < play2){
+            document.querySelector('h1').innerHTML="Player 2 WON :)";
+        }else{
+            document.querySelector('h1').innerHTML=" DRAW :)";
+        }
+}
+</script>
+
+    
+</body>
+</html>

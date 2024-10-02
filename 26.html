@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <!-- LECTURE 40 THAPA TECHNICAL -->
+<body>
+    <script>
+        var guestname=["guest1","guest2","guest3","guest4","guest5","guest6","guest7","guest8","guest9","guest10"];   // ARRAY CREATION
+
+        var name = prompt("What is your name :");
+
+       
+
+        var checkname = guestname.includes(name);  // includes provides the output as true or false
+
+        if(checkname == true){
+            alert("Welcome "+name+" you are Invited");
+        }else{
+            alert("Sorry "+name+" you are Invited");
+        }
+    </script>
+    
+</body>
+</html>

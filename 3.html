@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VIDEO N.O -7</title>
+	</head>
+	<body>
+		<!-- LECTURE 7 THAPA TECHNICAL -->
+		<!-- SWITCH STATEMENT-->
+		<h3>Enter your choice</h3>
+		<ul>
+			<li>Add</li>
+			<li>Mul</li>
+			<li>Sub</li>
+		</ul>
+
+		<input type="text" name="" id="choices">
+		<br>
+		<br>
+		<button onclick="myfun()">click me</button>
+
+		<script>
+			function myfun() {
+				var Addi = document.getElementById("choices").value; // To Get input
+
+				switch (Addi) {
+					case "Add":
+						var a = 19;
+						var b = 7;
+						var Add = a + b;
+						document.write("Addition of two number is : " + Add);
+						break;
+					case "Mul":
+						var a = 19;
+						var b = 7;
+						var Mul = a * b;
+						document.write("Multiplication of two number is : " + Mul);
+						break;
+					case "Sub":
+						var a = 19;
+						var b = 7;
+						var Mul = a - b;
+						document.write("Subtraction of two number is : " + Mul);
+						break;
+					default:
+						alert("not a valid input");
+				}
+			}
+		</script>
+	</body>
+</html>
