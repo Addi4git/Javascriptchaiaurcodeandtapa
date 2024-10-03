@@ -1,3 +1,7 @@
+// Lecture no 26
+
+
+
 // if
 const isUserloggedIn = true
 const temperature = 41
